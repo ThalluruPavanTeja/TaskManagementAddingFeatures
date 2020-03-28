@@ -4,10 +4,45 @@ formatter.feature({
   "description": "\tIn order create a webpage\n\tAs a task manager\n\tI want to get access to the portal",
   "keyword": "Feature"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "LoginValidCredential",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I have a browser \u0027ch\u0027 with TaskManagement Home Page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.PriorityStepDefinition.i_have_a_browser_with_TaskManagement_Home_Page(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter login details from Excel \"src/test/resources/Excel/TaskManagement.xlsx\" with SheetName \"LoginDetails\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.PriorityStepDefinition.i_enter_login_details_from_Excel_with_SheetName(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should access to the portal with title as \u0027Administration\u0027",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.PriorityStepDefinition.i_should_access_to_the_portal_with_title_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "addingPrioritiesTest",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I have a browser \u0027ch\u0027 with Administration Page",
@@ -18,11 +53,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "addingPrioritiesTest",
-  "description": "",
-  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I enter Priority as  \u0027New Priority\u0027 and clicking add button",
@@ -44,10 +74,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "editingPrioritiesTest",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I have a browser \u0027ch\u0027 with Administration Page",
@@ -58,11 +88,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "editingPrioritiesTest",
-  "description": "",
-  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I select Priority \u0027Highest\u0027 and  edited priority as \u0027New Highest\u0027",
@@ -84,10 +109,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "deletingPriorityTest",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I have a browser \u0027ch\u0027 with Administration Page",
@@ -98,11 +123,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "deletingPriorityTest",
-  "description": "",
-  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I select Priority \u0027Normal\u0027 and  deleted the priority",
@@ -124,10 +144,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "addingProjectsTest",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I have a browser \u0027ch\u0027 with Administration Page",
@@ -138,11 +158,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "addingProjectsTest",
-  "description": "",
-  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I enter Project as  \u0027New Project\u0027 and clicking add button",
@@ -164,10 +179,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "editingProjectsTest",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I have a browser \u0027ch\u0027 with Administration Page",
@@ -178,11 +193,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "editingProjectsTest",
-  "description": "",
-  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I select Project \u0027Test Project\u0027 and  edited Project as \u0027New Test Project\u0027",
@@ -204,10 +214,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "deletingProjectsTest",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I have a browser \u0027ch\u0027 with Administration Page",
@@ -218,11 +228,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "deletingProjectsTest",
-  "description": "",
-  "keyword": "Scenario"
 });
 formatter.step({
   "name": "I select Project \u0027My Project\u0027 and  deleted the project",

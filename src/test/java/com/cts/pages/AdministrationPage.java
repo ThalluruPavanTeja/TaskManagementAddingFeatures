@@ -54,5 +54,11 @@ public class AdministrationPage {
 	public void clickingLogout() {
 		driver.findElement(logoutLoc).click();
 	}
+	
+	public String actualTitle()
+	{
+		String actualTitle = driver.getTitle();
+		return actualTitle;
+	}
 
 }

@@ -29,6 +29,7 @@ public WebDriver driver;
 			driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://examples.codecharge.com/TaskManager/Default.php");
 
